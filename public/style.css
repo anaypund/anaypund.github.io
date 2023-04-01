@@ -35,7 +35,8 @@ nav{
 }
 b{
     font-size: 70px;
-    color: #7f00ff;
+    /* color: #7f00ff; */
+    color: #224DFD;
 }
 .navItems{
     display: flex;
@@ -53,7 +54,8 @@ b{
 }
 .navItems li a:hover,
 .links a:hover{
-    color: #7f00ff;
+    color: #224DFD;
+    /* color: #7f00ff; */
 }
 .links a{
     font-size: 30px;
@@ -61,6 +63,7 @@ b{
     margin: 25px 10px;
 } 
 .wrapper{
+    position: fixed;
     display: flex;
     width: 100%;
     height: calc(100vh - 80px);
@@ -68,7 +71,9 @@ b{
     align-items: center;
     padding: 0 10%;
     overflow: hidden;
+    position: fixed;
 }
+
 .wrapper::before{
     position: absolute;
     content: "";
@@ -77,7 +82,7 @@ b{
     left: -12%;
     top: 40%;
     border-radius: 50%;
-    background: linear-gradient(45deg,#7f00ff,pink);
+    background: linear-gradient(45deg,#0230ea,rgb(148, 227, 243));
     animation: object1 6s linear infinite;
 }
 .wrapper::after{
@@ -88,7 +93,7 @@ b{
     left: 35%;
     top: 12%;
     border-radius: 50%;
-    background: linear-gradient(45deg,#7f00ff,pink);
+    background: linear-gradient(45deg,#0230ea,rgb(148, 227, 243));
     animation: object2 5s linear infinite;
 }
 @keyframes object1{
@@ -106,7 +111,41 @@ b{
 .cols{
     width: 50%;
 }
+
+.subscroll{
+    overflow: auto;
+    height: 330px;
+    overflow-x: hidden;
+    /* overflow-y: scroll; */
+    flex: 1;
+}
+.subscroll p{
+    display: flex;
+    margin: 1%;
+    padding: 1%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+.skillrow01{
+    display: flex;
+    margin-top: 4%;
+    justify-content: space-evenly;
+}
+.skillrow02{
+    display: flex;
+    margin-top: 4%;
+    justify-content: space-evenly;
+}
+.skills h2{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #3d535f;
+}
 .cols0{
+    /* overflow: auto; */
     z-index: 5;
     width: 60%;
 }
@@ -122,7 +161,7 @@ b{
     content: '';
     height: 4px;
     width: 45px;
-    background-color: #7f00ff;
+    background-color: #224DFD;
     bottom: 10px;
 }
 h1{
@@ -132,7 +171,8 @@ h1{
     color: #3d535f;
 }
 .multiText{
-    color: #7f00ff;
+    color: #224DFD;
+    /* color: #7f00ff; */
     text-transform: capitalize;
 } 
 p{
@@ -159,7 +199,7 @@ button{
     box-shadow: 0 15px 10px rgba(0,0,0,0.4);
 }
 button:hover{
-    background-color: #7f00ff;
+    background-color: #224DFD;
 }
 .imgbox{
     position: relative;
@@ -169,7 +209,7 @@ button:hover{
 .imgbox img{
     position: relative;
     height: 100%;
-    width: calc(100% - 80px);
+    width: calc(100% - 70px);
     top: 86px;
     right: -57px;
     animation: animateUser 4s linear infinite;
