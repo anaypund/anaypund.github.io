@@ -186,6 +186,10 @@ p{
     position: relative;
     left: 150px;
 }
+.btns a{
+    text-decoration: none;
+    color: #fff;
+}
 button{
     outline: none;
     padding: 8px 14px;
@@ -237,3 +241,22 @@ button:hover{
         width: 127%;
     }
 }
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
